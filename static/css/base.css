@@ -1,0 +1,23 @@
+h1 {
+    color: red;
+}
+
+h1 {
+    color: red
+}
+
+img { 
+    height:400px ;
+    width: auto;
+}
+#id_title,
+#id_subtitle,
+#id_author,
+#id_body,
+#id_create {
+    margin: 5px;
+    padding: 5px;
+    width: 100%;
+    border-radius: 8px;
+
+}
