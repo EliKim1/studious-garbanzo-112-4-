@@ -1,8 +1,8 @@
-from django.shortcuts import render
+from django.views.generic import TemplateView
 
-class HomePage(TemplateView): 
+class HomePageView(TemplateView): 
     template_name = "pages/index.html"
     
-class AboutPage(TemplateView): 
+class AboutPageView(TemplateView): 
     template_name = "pages/about.html"
     

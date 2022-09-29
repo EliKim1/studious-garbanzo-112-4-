@@ -29,17 +29,14 @@
                     </a>
                     <ul class="dropdown-menu">
                         <li><a class="dropdown-item" href="{% url 'new' %}">Create Post</a></li>
-                        <li><a class="dropdown-item" href="{% url 'draft_list' %}">Drafts</a></li>
-                    <li><hr class="dropdown-divider"></li>
+                    <li><hr class="dropdown-divider"></a></li>
                     <li><a class="dropdown-item" href="{% url 'password_change' %}">Change Passwortd</a></li>
-                    {% if user.is_staff %}
-                        <li><a class="dropdown-item" href="{% url 'admin:index' %}">Admin</a></li>
-                    {% endif %}
                     <li><a class="dropdown-item" href="{% url 'logout' %}">Log Out</a></li>
                     </ul>
                 </li>
                 {% else %}
                     <a class="nav-link" href="{% url 'login' %}">Log In</a>
+                    <a class="nav-link" href="{% url 'signup' %}">Sign up</a>
                 {% endif %}
             </div>
             </div>

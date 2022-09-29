@@ -2,6 +2,13 @@ from django.db import models
 from django.contrib.auth import get_user_model
 from django.urls import reverse
 
+class Status(models.Model):
+    name = models.CharField(max_length=128)
+    description = models.CharField(max_length=256)
+
+    def __str__(self):
+        return self.name
+
 class Post(models.Model):
     title = models.CharField(max_length=256)
     subtitle = models.CharField(max_length=256)
