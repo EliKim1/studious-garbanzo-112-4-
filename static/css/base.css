@@ -5,7 +5,6 @@ h1 {
 h1 {
     color: red
 }
-
 img { 
     height:400px ;
     width: auto;
@@ -19,5 +18,17 @@ img {
     padding: 5px;
     width: 100%;
     border-radius: 8px;
+}
+.author-option {
+    text-align: right;
+}
 
+.card {
+    margin: 10px;
+}
+.post-detail {
+    border-radius: 10px;
+    margin: 10px;
+    padding: 10px;
+    border: 3px solid black;
 }
